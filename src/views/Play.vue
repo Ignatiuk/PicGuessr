@@ -104,6 +104,8 @@ export default {
 
 <style lang="scss">
 .play-view {
+  padding: 30px 0;
+
   &__image {
     position: relative;
     display: flex;
