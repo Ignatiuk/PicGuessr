@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: $mainFont;
+}
+
+.container {
+  max-width: 808px;
+  width: 100%;
+  padding: 0 16px;
+
+  @media (max-width: $breakpointMobile) {
+    max-width: 550px;
+  }
+}

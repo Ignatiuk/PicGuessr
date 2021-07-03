@@ -1,0 +1,10 @@
+@mixin heading2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
