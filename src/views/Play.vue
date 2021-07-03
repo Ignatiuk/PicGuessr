@@ -22,6 +22,8 @@
         @click="onNextStepClick"
       ) Продолжить
 
+      BaseButton.play-view__button(@click="$router.push('/')") На главную
+
 </template>
 
 <script>
@@ -106,7 +108,7 @@ export default {
     position: relative;
     display: flex;
     border-radius: 4px;
-    max-height: 600px;
+    max-height: 520px;
     min-height: 400px;
     overflow: hidden;
     cursor: zoom-in;
@@ -129,6 +131,8 @@ export default {
 
   &__body {
     margin: 12px auto 0;
+    display: grid;
+    grid-gap: 12px;
   }
 
   &__title {
@@ -136,15 +140,14 @@ export default {
 
     color: #4183c4;
     text-align: center;
-    margin-bottom: 14px;
-  }
-
-  &__input {
-    margin-bottom: 12px;
   }
 
   &__loader {
-    margin: 24px auto;
+    margin: 28px auto;
+  }
+
+  @media (max-width: $breakpointMobile) {
+    width: 100%;
   }
 }
 </style>
